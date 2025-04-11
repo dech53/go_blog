@@ -1,0 +1,86 @@
+captcha:
+    height: 80
+    width: 240
+    length: 6
+    max_skew: 0.7
+    dot_count: 80
+email:
+    host: smtp.qq.com
+    port: 465
+    from: 2496916936@qq.com
+    nickname: dech53
+    secret: fisyxuabaxvuecag
+    is_ssl: true
+es:
+    url: http://127.0.0.1:9200
+    username: ""
+    password: ""
+    is_console_print: true
+gaode:
+    enable: true
+    key: 425189fd484b837d38fd5150e475cc32
+jwt:
+    access_token_secret: 5adNSpI--1O4AfhI98AmNgwtL-GLLYRhSZNuuZqbGXs=
+    refresh_token_secret: qyOcN8065conYTFhB8BPEPNNE2GP7Yxrj2qUjaW2pKM=
+    access_token_expiry_time: 2h
+    refresh_token_expiry_time: 7d
+    issuer: go_blog
+mysql:
+    host: 127.0.0.1
+    port: 3421
+    config: charset=utf8mb4&parseTime=True&loc=Local
+    db_name: blog_db
+    username: root
+    password: root
+    max_idle_conns: 10
+    max_open_conns: 100
+    log_mode: info
+minio:
+    bucket: test
+    img_path: https://localhost:9000/image
+    end_point: localhost:9000
+    access_key: h0tTGdv6MkYpm9E0Hwgg
+    secret_key: lsIIYs0kDkldB2WDjQsXGiHPG6YQSaXwY9U5bjBp
+    use_ssl: false
+redis:
+    address: 127.0.0.1:6379
+    password: "123456"
+    db: 0
+system:
+    host: 0.0.0.0
+    port: 8080
+    env: release
+    router_prefix: api
+    use_multipoint: true
+    sessions_secret: ehdJDPlGbLPMnCro7aCCHGfa-n9MeHLUKGYfTZ0nbmY=
+    oss_type: local
+upload:
+    size: 20
+    path: uploads
+website:
+    logo: /uploads/image/1099cad45861ad57ef36bdf04ae8aff5-20250319224226.png
+    full_logo: /uploads/image/1099cad45861ad57ef36bdf04ae8aff5-20250319224256.png
+    title: EB
+    slogan: ""
+    slogan_en: ""
+    description: 博客描述
+    version: 1.0.0
+    created_at: "2025-3-21"
+    icp_filing: icp备案号
+    public_security_filing: 公安备案号
+    bilibili_url: https://space.bilibili.com/442019530
+    gitee_url: https://gitee.com/dech53
+    github_url: https://github.com/dech53
+    name: 昵称
+    job: 工作
+    address: 地址
+    email: 2496916936@qq.com
+    qq_image: /uploads/image/6ebd335bdadf8398449e191894b93a19-20250320214607.png
+    wechat_image: ""
+zap:
+    level: info
+    filename: log/go_blog.log
+    max_size: 200
+    max_backups: 30
+    max_age: 5
+    is_console_print: true
